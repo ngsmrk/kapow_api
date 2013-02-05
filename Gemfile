@@ -9,3 +9,7 @@ gem 'thin'
 gem 'heroku'
 
 gem 'comix_scraper'
+
+group :test do
+	gem 'rspec-rails'
+end
