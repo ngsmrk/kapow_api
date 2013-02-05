@@ -1,4 +1,8 @@
 KapowApi::Application.routes.draw do
+  get "releases/new"
+
+  get "releases/upcoming"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -12,4 +12,5 @@ gem 'comix_scraper'
 
 group :test do
 	gem 'rspec-rails'
+	gem 'json_spec'
 end
