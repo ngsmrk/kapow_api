@@ -7,6 +7,7 @@ describe ReleasesController do
     before :each do
       init_mocks
       @scraper.should_receive(:get_new_releases).and_return @release_data
+      request.accept = 'application/json'
 
       get 'new'
     end
@@ -19,6 +20,7 @@ describe ReleasesController do
     before :each do
       init_mocks
       @scraper.should_receive(:get_upcoming_releases).and_return @release_data
+      request.accept = 'application/json'
             
       get 'upcoming'
     end    
